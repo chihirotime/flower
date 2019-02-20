@@ -1,0 +1,205 @@
+.nav{
+    width: 100%;
+    height: 79px;
+    background: rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.navContent{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin-top: 14px;
+}
+/* a 标签是行内标签*/
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.logo a img{
+    width: 100%;
+    height: 100%;
+}
+.navList{
+    width: 602px;
+    height: 100%;
+    float: right;
+}
+.navList li{
+    float: left;
+    width: 86px;
+    height: 100%;
+}
+.navList li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 79px;
+    font-size: 14px;
+    color: #000000;
+    transition: color linear .5s;
+}
+.navList li a:hover{
+    color: #16b0bc;
+}
+/* nav */
+#title{
+    width: 100%;
+    height: 120px;
+    font-size: 35px;
+    font-weight: 400;
+    color: #F67A82;
+    line-height: 120px;
+    text-align: center;
+    background: #f2f2f2;
+    margin-top: 80px;
+}
+#main{
+    width: 100%;
+    height: 760px;
+    border-top: 1px solid #f0f2f5;
+    padding: 30px 0;
+    background: #f2f2f2;
+}
+#main .content{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    /*background: #ffffff;*/
+}
+/*左边*/
+#main .content .left{
+    width: 720px;
+    height: 699px;
+    padding: 30px;
+    float: left;
+    background: #ffffff;
+}
+.content .left .list{
+    width: 100%;
+    height:679px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    /*margin-bottom: 11px;*/
+}
+.list li {
+    width: 100%;
+    height: 57px;
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e4eaec;
+}
+.list li .list-left{
+    /*width: 46px;*/
+    float: left;
+}
+.list li .list-left i{
+    font-size: 36px;
+    color: #a3afb7;
+}
+.list li .list-right {
+    width: 672px;
+    height: 53px;
+    float: right;
+}
+.list li .list-right h4{
+    font-size: 14px;
+    padding-top: 4px;
+    margin-bottom: 5px;
+}
+.list-right h4 .two{
+    float: right;
+    color: #a3afb7;
+}
+.list-right p{
+    margin-bottom: 11px;
+    font-size: 14px;
+    color: #a3afb7;
+}
+.list-right .well{
+    width: 630px;
+    height: 21px;
+    font-size: 14px;
+    padding: 20px;
+    border: 1px solid #e4eaec;
+    background-color: #f3f7f9;
+}
+/*右边*/
+#main .content .right{
+    width: 300px;
+    height: 404px;
+    padding: 30px;
+    margin-left: 30px;
+    background: #ffffff;
+    float: right;
+}
+.right .form-group{
+    width: 300px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.right .form-group input{
+    height: 36px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 6px 15px;
+    border: 1px solid #e4eaec;
+    font-size: 14px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.right .form-group textarea{
+    width: 100%;
+    height: 110px;
+    padding: 6px 15px;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e4eaec;
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.right .form-group .yzm{
+    width: 189px;
+    height: 36px;
+    padding: 6px 15px;
+    border: 1px solid #e4eaec;
+    float: left;
+}
+.right .form-group .input-addon{
+    width: 80px;
+    height: 22px;
+    padding: 6px 15px;
+    border-bottom: 1px solid #e4eaec;
+    border-top: 1px solid #e4eaec;
+    border-right: 1px solid #e4eaec;
+    float: right;
+}
+.input-addon img{
+    width: 80px;
+    height: 20px;
+}
+.right .form-group button{
+    border-style: none;
+    height: 36px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 6px 15px;
+    color: #fff;
+    background-color: #62a8ea;
+    border-color: #62a8ea;
+    font-size: 14px;
+}
+.form-group button:hover{
+    background: rgba(98,168,234,0.5);
+}

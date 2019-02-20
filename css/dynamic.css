@@ -1,0 +1,236 @@
+.nav{
+    width: 100%;
+    height: 79px;
+    background: rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.navContent{
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin-top: 14px;
+}
+/* a 标签是行内标签*/
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.logo a img{
+    width: 100%;
+    height: 100%;
+}
+.navList{
+    width: 602px;
+    height: 100%;
+    float: right;
+}
+.navList li{
+    float: left;
+    width: 86px;
+    height: 100%;
+}
+.navList li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 79px;
+    font-size: 14px;
+    color: #000000;
+    transition: color linear .5s;
+}
+.navList li a:hover{
+    color: #16b0bc;
+}
+/* nav */
+#title{
+    width: 100%;
+    height: 120px;
+    font-size: 35px;
+    font-weight: 400;
+    color: #F67A82;
+    line-height: 120px;
+    text-align: center;
+    background: #f2f2f2;
+    margin-top: 80px;
+}
+#main{
+    width: 100%;
+    height: 1181px;
+    border-top: 1px solid #f0f2f5;
+    padding: 30px 0;
+    background: #f2f2f2;
+}
+#main .content{
+    width: 1170px;
+    height: 1181px;
+    margin: 0 auto;
+    /*background: #ffffff;*/
+}
+#main .content .left{
+    width: 818px;
+    height: 1121px;
+    padding: 30px;
+    float: left;
+    background: #ffffff;
+}
+.content .left .list{
+    width: 100%;
+    height: 1121px;
+    background: #ffffff;
+    /*margin-bottom: 11px;*/
+}
+.list li {
+    width: 100%;
+    height: 160px;
+    padding-bottom: 30px;
+    /*box-sizing: border-box;*/
+    border-bottom: 1px solid #f0f2f5;
+    margin-bottom: 30px;
+}
+.list li a img{
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    display: inline-block;
+    float: left;
+}
+.list li .media{
+    width: 638px;
+    height: 100%;
+    float: right;
+
+}
+
+.media h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.media h4 :hover{
+    color: #62a8ea;
+    text-decoration: underline;
+}
+.media .des{
+    color: #76838f;
+    font-weight: 300;
+    margin-bottom: 10px
+}
+.media .info{
+    color: #a3afb7;
+    font-weight: 300;
+    font-size: 16px;
+}
+.media .info .author{
+    margin:0 10px;
+}
+
+.hidden-xs {
+    margin-top: 31px;
+    text-align: center;
+    font-size: 14px;
+}
+.hidden-xs .page .PreSpan{
+    border: 1px solid #e4eaec;
+    padding: 9px 15px;
+    background: #fff;
+    color: #ccd5db;
+}
+
+.page a{
+    border: 1px solid #e4eaec;
+    padding: 9px 15px;
+    text-align: center;
+    color: #76838f;
+}
+.page a.Ahver{
+    background: #f86867;
+    border-color: #f86867;
+    color: #fff;
+}
+.page a:hover{
+    background: #e4eaec;
+}
+
+#main .content .right{
+    width: 222px;
+    height: 314px;
+    padding: 20px;
+    margin-left: 30px;
+    background: #ffffff;
+    float: right;
+}
+.content .right .hunt-for{
+    width: 100%;
+    height: 36px;
+    border-radius: 18px;
+    /*border: 1px solid rgba(0,0,0,0);*/
+    background: #cccccc;
+    box-sizing: border-box;
+    position: relative;
+}
+.content .right .hunt-for .input{
+    width: 155px;
+    height: 22px;
+    border-radius: 18px;
+    font-size: 14px;
+    color: #76838f;
+    border: 1px solid #e4eaec;
+    padding: 6px 50px 6px 15px;
+}
+.content .right .hunt-for .button{
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 100%;
+    padding: 0 10px;
+    background: 0 0;
+    border: none;
+    border-radius: 0 200px 200px 0;
+}
+.content .right .recommend{
+    width: 100%;
+    height: 166px;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-top: 1px solid #f0f2f5;
+    border-bottom: 1px solid #f0f2f5;
+}
+.content .right .recommend h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+.content .right .recommend .listGroup{
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+}
+.listGroup .list-group-item{
+    width: 190px;
+    height: 22px;
+    padding: 10px 15px;
+    border: 1px solid #f0f2f5;
+    margin-bottom: -1px;
+    font-size: 14px;
+    color: #2a333c;
+}
+.list-group-item a:hover,.colum a:hover{
+    text-decoration: underline;
+    color: #62a8ea;
+}
+.right .colum{
+    margin-bottom: 11px;
+    width: 100%;
+}
+.colum{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
