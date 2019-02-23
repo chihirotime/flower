@@ -104,8 +104,8 @@
     /*margin: -190px auto;*/
     text-align: center;
     position: absolute;
-    top: 190px;
-    left: 230px;
+    top: calc((100% - 148px)/2);
+    left: calc((100% - 150px)/2);
 }
 
 .faceOne span {
