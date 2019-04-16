@@ -55,6 +55,7 @@
     width: 100%;
     height: 1089px;
     /*padding: 0 15px;*/
+    margin-top: 80px;
 }
 
 .first {
@@ -62,12 +63,17 @@
     height: 532px;
     overflow: hidden;
     float: left;
-    /*transition: all 1s;*/
+    transition: all 1s;
     position: relative;
 }
 
-.first img:hover{
-    transform: scale(1.2);
+.first:hover img{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.first:hover  .face{
+    transform: scale(1.1);
+    background: rgba(0,0,0,0.5);
     transition: all 1s;
 }
 .first:hover .middle h3 {
@@ -87,17 +93,20 @@
 }
 
 .first img {
+    display: block;
     width: 100%;
     height: 532px;
+    transition: all 1s;
 }
 
- /*.first .face{
+ .first .face{
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.35);
     position: absolute;
     top: 0;
-}*/
+     transition: all 1s;
+}
 .middle {
     width: 150px;
     height: 148px;

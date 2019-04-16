@@ -20,6 +20,16 @@ a{
     top: 0;
     z-index: 1;
 }
+.nav.active{
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+.nav.active .navList li a{
+    color: #333333;
+}
+.nav.active .navList li a:hover{
+    color:  #16b0bc;
+}
 .navContent{
     width: 1170px;
     height: 100%;
@@ -59,7 +69,7 @@ a{
     line-height: 79px;
     font-size: 14px;
     color: #ffffff;
-    transition: color linear .5s;
+    transition: linear .5s;
 }
 .navList li a:hover{
     color: #16b0bc;
@@ -67,14 +77,52 @@ a{
 /* nav */
 .banner{
     width: 100%;
-    height: 720px;
-    background: #f0b9ff;
+    height: auto;
     overflow: hidden;
+    position: relative;
 }
-.banner img{
-    display: inline-block;
+.inner {
+    width: 400vw;
+    height: auto;
+    overflow: hidden;
+    margin-left: -100vw;
+    transition: all 1s;
+}
+.img-box {
+    width: 100vw;
+    height: auto;
+    float: left;
+}
+.img-box img {
+    display: block;
     width: 100%;
-    height: 720px;
+    height: auto;
+}
+.arrow {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*font-size: 30px;*/
+    color: rgba(204, 204, 204, 0.5);
+    opacity: 0;
+    cursor: pointer;
+}
+.pre i,.next i{
+    font-size: 30px;
+}
+.pre {
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.arrow:hover{
+    opacity: 1;
 }
 /*banner*/
 .floral{
@@ -92,6 +140,8 @@ a{
     font-weight: 200;
     text-align: center;
     height: 50px;
+    position: absolute;
+    left: 40%;
 }
 .floralContent p.desc{
     margin-bottom: 50px;
@@ -100,30 +150,37 @@ a{
 }
 .swiper{
     width: 1170px;
-    height: 476px;
+    /*height: 476px;*/
+    height: 604px;
+    position: relative;
 }
-.swiper .swiperLeft{
+.middle-content{
+    width: 5000px;
+    height: 476px;
+    margin-left: -1050px;
+}
+.goods-arrow{
     width: 75px;
-    height: 100%;
-    float: left;
+    height: 476px;
+    position: absolute;
+    top: 0;
     text-align: center;
     line-height: 476px;
 }
-.swiper .swiperRight{
-     float: right;
-     width: 75px;
-     height: 100%;
-     text-align: center;
-     line-height: 476px;
- }
-.swiper .swiperLeft img,.swiper .swiperRight img{
-     width: 30px;
-     height: 30px;
-     border-radius: 15px;
- }
+.preLeft i,.nextRight i{
+    font-size: 30px;
+    color: #cccccc;
+}
+.preLeft {
+    left: 0;
+}
+.nextRight{
+    right: 0;
+}
+
 .swiper .swiperMiddle{
     width: 1020px;
-    height: 100%;
+    height: 476px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -165,6 +222,10 @@ a{
     background: #f96868;
     border-radius: 5px;
 }
+.floralContent a:hover{
+    background: rgba(249, 104, 104, 0.8);
+    transition: all .3s;
+}
 /*floral*/
 .flower{
     width: 100%;
@@ -181,6 +242,8 @@ a{
     font-weight: 300;
     text-align: center;
     height: 50px;
+    position: absolute;
+    left: 40%;
 }
 .flowerList{
     height: 560px;
@@ -243,11 +306,20 @@ a{
     position: absolute;
     right: 0;
 }
+.animationLeft,.animationRight{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
 /*flower*/
 .buttom{
     width: 100%;
     height: 819px;
     padding: 70px 0;
+}
+.foot{
+    height: 672px;
+    width: 1170px;
 }
 .buttomContent{
     width: 1170px;
@@ -288,18 +360,52 @@ a{
     height: 151px;
     text-align: center;
 }
-.footer div{
-    width: 100%;
+.footer .dsf{
+    width: 120px;
     height: 46px;
-    padding: 5px 0;
-    margin-top: 10px;
-    /*text-align: center;*/
+    margin: 20px auto 0;
 }
-.footer div a img{
-    display: inline-block;
-    width: 26px;
+.chat{
+    width: 30px;
     height: 30px;
-    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+}
+.ewmBottom{
+    display: none;
+    width: 160px;
+    height: 208px;
+    background: #ffffff;
+    position: absolute;
+    left: -70px;
+    top: -216px;
+}
+.ewmBottom:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -5px;
+    left: 75px;
+    background: #ffffff;
+}
+.ewmBottom .ewm{
+    width: 160px;
+    height: 208px;
+}
+/*.weixin{*/
+    /*display: block;*/
+    /*width: 26px;*/
+    /*height: 26px;*/
+/*}*/
+
+.footer .dsf .qq{
+    display: block;
+    width: 26px;
+    height: 26px;
+    /*margin-top: 10px;*/
 }
 .footer span a{
     display: inline-block;
@@ -312,12 +418,6 @@ a{
     color: #a2c2e1;
     text-decoration: underline;
 }
-.footer img{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-}
 .footer p{
     color: #aaaaaa;
     line-height: 25px;
@@ -325,3 +425,57 @@ a{
 }
 /*last*/
 
+/*返回键*/
+.back{
+    width: 36px;
+    height: 36px;
+    background: rgba(0,100,255,0.8);
+    transition: all .3s;
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    text-align: center;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    display: none;
+}
+.back.active{
+    display: block;
+}
+.back:hover{
+    background: rgba(0,100,255,0.6);
+    transition: all .3s;
+}
+
+/*more*/
+.h1{
+    width: 1170px;
+    height: 50px;
+    position: relative;
+}
+.more1,.more2{
+    width: 56px;
+    height: 30px;
+    background: #0064FF;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 55%;
+}
+.more1:after,.more2:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background: #0064FF;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+}
+/*.more1:hover,.more2:hover{*/
+    /*background: rgba(0, 100, 255, 0.8);*/
+/*}*/
